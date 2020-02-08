@@ -3,7 +3,6 @@ const io = require("socket.io")(port);
 const Message = require("./Message");
 
 console.log("Server running on port " + port);
-console.log("Life is pain");
 io.on("connection", function(socket) {
 
     console.log("User connected");

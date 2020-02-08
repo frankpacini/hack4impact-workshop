@@ -1,6 +1,6 @@
 import React from "react";
 import {View, Text, TextInput, Button} from "react-native";
-import Mongo from "../mongo";
+import Mongo from "../../server/mongo";
 
 export default class Login extends React.Component {
     

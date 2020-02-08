@@ -1,7 +1,7 @@
 import React from "react";
 import { GiftedChat } from "react-native-gifted-chat";
 import Socket from "../socket";
-import Mongo from "../mongo";
+import Mongo from "../../server/mongo";
 var recip = null;
 
 export default class Conversation extends React.Component {
