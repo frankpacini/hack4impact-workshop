@@ -16,6 +16,10 @@ class Socket {
         this.socket.emit("message", {username: this.displayName, message: message});
     }
     sendMessage(message, id) {
+        if (id.equals("")) {
+            this.sendMessage(message);
+            return;
+        }
         console.log("id: " + id + " message: " + message)
         io.to(`${id}`).emit("message", {username: this.displayName, message: message});
     }
